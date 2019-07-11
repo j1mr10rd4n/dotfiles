@@ -1,0 +1,4 @@
+# Source Prezto's zlogin
+if [[ -v PREZTODIR && -f "${PREZTODIR}/runcoms/zlogin" ]]; then
+  source "${PREZTODIR}/runcoms/zlogin"
+fi

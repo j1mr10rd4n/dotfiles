@@ -1,0 +1,6 @@
+echo "my .zlogout running"
+
+# Source Prezto's zlogout
+if [[ -v PREZTODIR && -f "${PREZTODIR}/runcoms/zlogout" ]]; then
+  source "${PREZTODIR}/runcoms/zlogout"
+fi

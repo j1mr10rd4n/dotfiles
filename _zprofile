@@ -1,0 +1,5 @@
+# Source Prezto's zprofile
+if [[ -v PREZTODIR && -f "$PREZTODIR/runcoms/zprofile" ]]; then
+  source "$PREZTODIR/runcoms/zprofile"
+fi
+

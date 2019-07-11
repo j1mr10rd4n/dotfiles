@@ -1,0 +1,4 @@
+# Source Prezto's .zhsrc, which in turn sources zprezto/init.zsh
+if [[ -v PREZTODIR && -f "${PREZTODIR}/runcoms/zshrc" ]]; then
+  source "${PREZTODIR}/runcoms/zshrc"
+fi
