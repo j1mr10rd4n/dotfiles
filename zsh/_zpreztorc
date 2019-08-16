@@ -21,7 +21,7 @@
 zstyle ':prezto:*:*' color 'yes'
 
 # Add additional directories to load prezto modules from
-# zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib
+zstyle ':prezto:load' pmodule-dirs $HOME/.dotfiles/zsh/_zprezto-contrib
 
 # Set the Zsh modules to load (man zshmodules).
 # zstyle ':prezto:load' zmodule 'attr' 'stat'
@@ -36,13 +36,29 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'editor' \
   'history' \
-  'directory' \
-  'spectrum' \
-  'utility' \
-  'completion' \
+  'osx' \
+  'fzf-prezto' \
+  'piec-fzf-prezto' \
   'git' \
-  'prompt' \
-  'osx'
+  'prompt'
+
+  # 'environment' \
+  # 'terminal' \
+  # 'editor' \
+  # 'history' \
+  # 'directory' \
+  # 'spectrum' \
+  # 'utility' \
+  # 'completion' \
+  # 'osx' \
+  # 'fzf-prezto' \
+  # 'piec-fzf-prezto' \
+  # 'git' \
+  # 'docker' \
+  # 'syntax-highlighting' \
+  # 'history-substring-search' \
+  # 'autosuggestions' \
+  # 'prompt'
 
 #
 # Autosuggestions
@@ -117,6 +133,9 @@ zstyle ':prezto:module:osx:man' dash-keyword 'manpages'
 # Set the Pacman frontend.
 # zstyle ':prezto:module:pacman' frontend 'yaourt'
 
+
+
+source "${HOME}/.dotfiles/zsh/_zpowerlevel10k"
 #
 # Prompt
 #
@@ -125,7 +144,7 @@ zstyle ':prezto:module:osx:man' dash-keyword 'manpages'
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 # zstyle ':prezto:module:prompt' theme 'sorin'
-zstyle ':prezto:module:prompt' theme 'powerline'
+zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 
 
 # Set the working directory prompt display length.
@@ -235,3 +254,25 @@ zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 zstyle ':prezto:module:utility' safe-ops 'yes'
+
+#
+# fzf
+#
+# Use keybindings
+zstyle ':prezto:module:fzf' key-bindings 'yes'
+
+# Use completion
+zstyle ':prezto:module:fzf' completion 'yes'
+
+# Set height of the fzf results (comment for full screen)
+zstyle ':prezto:module:fzf' height '30%'
+
+# Open fzf results in a tmux pane (if using tmux)
+zstyle ':prezto:module:fzf' tmux 'yes'
+
+# Set colorscheme
+# A list of available colorschemes is available in color.zsh
+# To add more color schemes of your own, consult
+# https://github.com/junegunn/fzf/wiki/Color-schemes and add values to the
+# color.zsh file accordingly
+zstyle ':prezto:module:fzf' colorscheme 'Solarized Dark'

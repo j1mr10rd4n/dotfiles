@@ -1,0 +1,30 @@
+# Source Prezto's .zhsrc, which in turn sources zprezto/init.zsh
+if [[ -v PREZTODIR && -f "${PREZTODIR}/runcoms/zshrc" ]]; then
+  source "${PREZTODIR}/runcoms/zshrc"
+fi
+
+# use homebrew openssl instead of system
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+# use homebrew curl instead of system
+export PATH="/usr/local/opt/curl/bin:$PATH"
+
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# rbenv
+eval "$(rbenv init -)"
+
+
+# FUNCTIONS -----------------------------------------------------
+
+# mcd
+function mcd() {
+  mkdir -p "$1" && cd "$1";
+}
+
+#TODO - not working yet - plugin order?
+#source /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion
+#source /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion
+
