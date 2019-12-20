@@ -1,0 +1,13 @@
+set termguicolors
+set nolist
+set nospell
+set wildmenu
+set wildmode=list:longest,full
+set mouse=a
+set updatetime=100
+set sessionoptions=blank,curdir,folds,help,tabpages,winsize
+set timeout
+set ttimeout
+set timeoutlen=200
+set ttimeoutlen=100
+set viewoptions=cursor,folds,slash,unix
