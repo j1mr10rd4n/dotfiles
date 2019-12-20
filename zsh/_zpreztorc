@@ -36,11 +36,21 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'editor' \
   'history' \
+  'spectrum' \
+  'utility' \
+  'completion' \
   'osx' \
   'fzf-prezto' \
   'piec-fzf-prezto' \
-  'git' \
+  'terraform' \
+  'my-alias' \
+  'fasd' \
+  'syntax-highlighting' \
   'prompt'
+
+
+  # 'archive' \
+  # 'autosuggestions' \
 
   # 'environment' \
   # 'terminal' \
