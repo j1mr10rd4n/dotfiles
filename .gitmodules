@@ -1,3 +1,6 @@
 [submodule "zsh/_zprezto-contrib"]
 	path = zsh/_zprezto-contrib
 	url = git@github.com:j1mr10rd4n/prezto-contrib.git
+[submodule "nvim/vim-plug"]
+	path = nvim/vim-plug
+	url = https://github.com/junegunn/vim-plug
