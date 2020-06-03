@@ -2,6 +2,7 @@ nnoremap <space> <nop>
 let mapleader = "\<space>"
 let maplocalleader = ","
 
+inoremap jk <esc>
 vnoremap jk <esc>
 tnoremap jk <c-\><c-n>
 inoremap jkl <esc> :update<cr>
