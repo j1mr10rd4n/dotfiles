@@ -9,23 +9,6 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 # use homebrew curl instead of system
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
-# jenv
-if type jenv > /dev/null; then
-  export PATH="$HOME/.jenv/bin:$PATH"
-  eval "$(jenv init -)"
-fi
-
-# rbenv
-if type rbenv > /dev/null; then
-  eval "$(rbenv init -)"
-fi
-
-# nodenv
-if type nodenv > /dev/null; then
-  eval "$(nodenv init -)"
-fi
-
-
 # FUNCTIONS -----------------------------------------------------
 
 # mcd

@@ -3,3 +3,26 @@ if [[ -v PREZTODIR && -f "$PREZTODIR/runcoms/zprofile" ]]; then
   source "$PREZTODIR/runcoms/zprofile"
 fi
 
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+  # https://github.com/pyenv/pyenv-virtualenv
+  eval "$(pyenv virtualenv-init -)"
+fi
+
+# jenv
+if type jenv > /dev/null; then
+  export PATH="$HOME/.jenv/bin:$PATH"
+  eval "$(jenv init -)"
+fi
+
+# rbenv
+if type rbenv > /dev/null; then
+  eval "$(rbenv init -)"
+fi
+
+# nodenv
+if type nodenv > /dev/null; then
+  eval "$(nodenv init -)"
+fi
+
+
