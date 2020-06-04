@@ -20,3 +20,5 @@ function mcd() {
 #source /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion
 #source /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion
 
+export EDITOR=/usr/local/bin/nvim
+export VISUAL=/usr/local/bin/nvim
