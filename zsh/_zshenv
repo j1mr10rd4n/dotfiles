@@ -1,5 +1,5 @@
 export LANG='en_AU.UTF-8'
-export PREZTODIR=/Users/jim.riordan/dev/git/sorin-ionescu/prezto 
+export PREZTODIR=~/dev/git/sorin-ionescu/prezto
 
 if [[ -f "${PREZTODIR}/runcoms/zshenv" ]]; then
   source "${PREZTODIR}/runcoms/zshenv"
