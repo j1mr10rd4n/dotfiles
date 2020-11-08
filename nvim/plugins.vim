@@ -61,6 +61,8 @@
 
 " Languages and Syntax {
     Plug 'w0rp/ale'                                                          " async linting
+    
+    Plug 'editorconfig/editorconfig-vim'                                     " kind of like file settings
 
     " Clojure {
         Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
@@ -78,6 +80,19 @@
         Plug 'othree/es.next.syntax.vim'
         Plug 'othree/html5.vim'
     " }
+    
+    " Typescript {
+        Plug 'HerringtonDarkholme/yats.vim'
+        " Plug 'leafgarland/typescript-vim' 
+    " }
+
+    " jsx {
+        Plug 'maxmellon/vim-jsx-pretty'
+    " }
+
+    " velocity templates {
+        " Plug 'sealemar/vtl'
+    " }
 
     " Docker {
         Plug 'docker/docker', {'rtp': '/contrib/syntax/vim/'}
@@ -89,6 +104,14 @@
     
     " C# {
         Plug 'OmniSharp/omnisharp-vim'
+    " }
+   
+    " GraphQL {
+       Plug 'jparise/vim-graphql' 
+    " }
+
+    " Arduino {
+      Plug 'stevearc/vim-arduino'
     " }
 
 " }
